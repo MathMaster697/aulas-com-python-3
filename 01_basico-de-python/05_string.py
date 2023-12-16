@@ -11,4 +11,4 @@ print(meu_nome.lower()) # O método .lower() deixa todas as letras minúsculas
 
 # meu_nome.lower(): lower() é um método que transforma todas as letras em minúsculas. Quando usado em "matheus elegância", o método lower() deixará todas as letras em minúsculas: "matheus elegância".
 
-# Esses métodos são como "ferramentas" que podem ser usadas em strings para modificar ou manipular o texto de maneiras específicas, facilitando o processamento e a formatação dos dados conforme necessário. Exemplo
+# Esses métodos são como "ferramentas" que podem ser usadas em strings para modificar ou manipular o texto de maneiras específicas, facilitando o processamento e a formatação dos dados conforme necessário.
