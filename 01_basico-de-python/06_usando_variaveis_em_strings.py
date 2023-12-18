@@ -6,3 +6,5 @@
 nome = "Davi"
 idade = "40"
 frase = f"Olá, meu nome é (nome) e tenho (idade) anos."
+
+Exemplo
