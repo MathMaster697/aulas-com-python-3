@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para o documento -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala inicial para dispositivos móveis -->
+  <title>Login</title> <!-- Título da página exibido na aba do navegador -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Importa a fonte Montserrat do Google Fonts -->
+  <style>
+    /* Estilos para o corpo da página */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f8ff; /* Define a cor de fundo para azul claro */
+      font-family: 'Montserrat', sans-serif; /* Define a fonte Montserrat para todo o documento */
+    }
+    /* Estilos para o contêiner principal */
+    .container {
+      text-align: center; /* Alinha o texto ao centro */
+      max-width: 400px; /* Define a largura máxima do contêiner */
+      width: 90%; /* Define a largura do contêiner */
+      margin: auto; /* Centraliza o contêiner na página */
+    }
+    /* Estilos para o título principal */
+    h1 {
+      font-size: 2em; /* Define o tamanho da fonte para 2 vezes o tamanho padrão */
+      margin-bottom: 20px; /* Define a margem inferior */
+      font-weight: 700; /* Define o peso da fonte como bold (negrito) */
+    }
+    /* Estilos para o formulário */
+    form {
+      display: flex; /* Define o display como flexível para alinhar os itens verticalmente */
+      flex-direction: column; /* Define a direção dos itens como coluna */
+      align-items: center; /* Alinha os itens ao centro */
+      padding: 20px; /* Adiciona preenchimento interno */
+      border: 1px solid #ccc; /* Adiciona uma borda com cor cinza */
+      border-radius: 5px; /* Adiciona um raio de borda para suavizar os cantos */
+      background-color: #fff; /* Define a cor de fundo para branco */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao formulário */
+    }
+    /* Estilos para os campos do formulário */
+    input[type="email"], input[type="password"], input[type="submit"] {
+      width: 100%; /* Define a largura total para os campos */
+      margin: 5px 0; /* Define a margem superior e inferior */
+      padding: 8px; /* Adiciona preenchimento interno */
+      border-radius: 3px; /* Adiciona um raio de borda */
+      border: 1px solid #ccc; /* Adiciona uma borda com cor cinza */
+      box-sizing: border-box; /* Define a caixa de modelo incluindo o padding e a borda no cálculo da largura total */
+    }
+    /* Regra de mídia para telas menores */
+    @media screen and (max-width: 480px) {
+      /* Estilos para telas menores (até 480px de largura) */
+      .container {
+        width: 100%; /* Largura total para telas menores */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Div que contém o conteúdo do formulário -->
+  <div class="container">
+    <!-- Título principal -->
+    <h1>Tela de Login</h1>
+    <!-- Formulário -->
+    <form>
+      <input type="email" placeholder="Email"> <!-- Campo de e-mail -->
+      <input type="password" placeholder="Senha"> <!-- Campo de senha -->
+      <input type="submit" value="Registrar"> <!-- Botão de registro -->
+    </form>
+  </div>
+
+  <!-- Script para exibir alerta ao clicar no botão "Registrar" -->
+  <script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Previne o comportamento padrão do formulário
+      alert('Registrado com sucesso!'); // Exibe um alerta ao clicar no botão "Registrar"
+    });
+  </script>
+</body>
+</html>
